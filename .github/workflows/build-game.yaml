@@ -1,12 +1,10 @@
 name: Actions 😎
 
-on: [push, pull_request]
-
-permissions:
-  contents: write
-  
+on: [push, pull_request] 
 
 jobs:
+  permissions:
+    contents: write
   build:
     name: Build my project ✨
     runs-on: ubuntu-latest
